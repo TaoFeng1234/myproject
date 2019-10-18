@@ -1,0 +1,36 @@
+---
+title: "biostat"
+author: "TaoFeng1234"
+date: "2019-10-18"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Import the data set and produce a summary of it
+
+Summary of the biostat data set
+```{r}
+d <- read.csv("data/biostats.csv")
+data(d)
+summary(d)
+
+print(paste("There are",nrow(d),"rows in biostats data set!"))
+print(paste("There are",ncol(d),"cols in biostats data set!"))
+```
+
+##statistical summary of the "age","weight" column and the plot their relationship
+```{r}
+summary(d$Age)
+hist(d$Age, main = "histogrm of biostat Age")
+```
+
+```{r}
+summary(d$Weight..lbs.)
+hist(d$Weight..lbs., main = "histogrm of biostat weight")
+```
+
+##plot of age and weight
+```{r}
+plot(d$Age,d$Weight..lbs.,xlab = "Age",ylab = "weight")
+```
