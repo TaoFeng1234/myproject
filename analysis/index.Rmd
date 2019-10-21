@@ -9,3 +9,35 @@ editor_options:
 ---
 
 Welcome to my first workflowr research website.
+
+Summary of the biostat data set
+```{r}
+d <- read.csv("data/biostats.csv")
+data(d)
+summary(d)
+
+print(paste("There are",nrow(d),"rows in biostats data set!"))
+print(paste("There are",ncol(d),"cols in biostats data set!"))
+```
+
+statistical summary of the "age","weight" column and the plot their relationship
+```{r}
+summary(d$Age)
+hist(d$Age, main = "histogrm of biostat Age")
+```
+
+```{r}
+summary(d$Weight..lbs.)
+hist(d$Weight..lbs., main = "histogrm of biostat weight")
+```
+
+```{r}
+plot(d$Age,d$Weight..lbs.,xlab = "Age",ylab = "weight")
+```
+
+Now let's run a simple regression with weight against to sex,height,and age
+```{r}
+mod <- lm(d$Weight..lbs.~d$Sex+d$Height..in.+d$Age)
+summary(mod)
+```
+
