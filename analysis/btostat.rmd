@@ -17,6 +17,8 @@ summary(d)
 
 print(paste("There are",nrow(d),"rows in biostats data set!"))
 print(paste("There are",ncol(d),"cols in biostats data set!"))
+print(paste("The mean of age is",mean(d$Age)))
+print(paste("The median height of this group is", median(d$Height..in.)))
 ```
 
 ##statistical summary of the "age","weight" column and the plot their relationship
@@ -34,3 +36,19 @@ hist(d$Weight..lbs., main = "histogrm of biostat weight")
 ```{r}
 plot(d$Age,d$Weight..lbs.,xlab = "Age",ylab = "weight")
 ```
+
+
+##the linear regression with height against weight,age and sex
+```{r}
+
+mod <- lm(d$Height..in.~d$Sex+d$Age+d$Weight..lbs.)
+summary(mod)
+
+```
+
+The median residuals of this linear model is 
+`r median(residuals(mod))`
+
+
+
+
