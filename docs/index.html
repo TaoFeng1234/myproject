@@ -22,6 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -289,7 +291,13 @@ $(document).ready(function () {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/TaoFeng1234/myproject">
+    <span class="fa fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -331,10 +339,10 @@ div.section {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2019-10-18
+<strong>Last updated:</strong> 2019-10-21
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>myproject/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -362,20 +370,81 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong7042e62"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> 7042e62 </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong7042e62" class="panel-collapse collapse">
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20191018code"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Seed:</strong> <code>set.seed(20191018)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20191018code" class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20191018)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Session information:</strong> recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be confident that you successfully produced the results during this run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
+</p>
+</div>
+<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Using relative paths to the files within your workflowr project makes it easier to run your code on other machines.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomTaoFeng1234myprojecttreea6eb471f20d8b88b4370a5363aac41135a500b1etargetblanka6eb471a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/TaoFeng1234/myproject/tree/a6eb471f20d8b88b4370a5363aac41135a500b1e" target="_blank">a6eb471</a> </a>
+</p>
+</div>
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomTaoFeng1234myprojecttreea6eb471f20d8b88b4370a5363aac41135a500b1etargetblanka6eb471a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
 Ignored files:
+    Ignored:    .Rhistory
     Ignored:    .Rproj.user/
 
 Untracked files:
-    Untracked:  data/biostats.csv
+    Untracked:  docs/figure/
 
 Unstaged changes:
     Modified:   analysis/index.Rmd
@@ -419,10 +488,61 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/TaoFeng1234/myproject/a6eb471f20d8b88b4370a5363aac41135a500b1e/docs/index.html" target="_blank">a6eb471</a>
+</td>
+<td>
+TaoFeng1234
+</td>
+<td>
+2019-10-21
+</td>
+<td>
+updated the index rmd file. It should be the same as the bio-stat file. Please check this file for homework submission
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-7042e62
+<a href="https://github.com/TaoFeng1234/myproject/blob/5fb2946ad4e59da34509192a367852e7d7f274d5/analysis/index.Rmd" target="_blank">5fb2946</a>
+</td>
+<td>
+TaoFeng1234
+</td>
+<td>
+2019-10-21
+</td>
+<td>
+added lm mod about height aganist all other estimators besides name
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/TaoFeng1234/myproject/blob/1cf467b045f01755bee28a274274c3f932210332/analysis/index.Rmd" target="_blank">1cf467b</a>
+</td>
+<td>
+TaoFeng1234
+</td>
+<td>
+2019-10-18
+</td>
+<td>
+Included simple linear regression here.
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/TaoFeng1234/myproject/blob/7042e62d102c7116923963ed7fc96a5eb2907b24/analysis/index.Rmd" target="_blank">7042e62</a>
 </td>
 <td>
 TaoFeng1234
@@ -442,6 +562,113 @@ Start workflowr project.
 </div>
 </div>
 <p>Welcome to my first workflowr research website.</p>
+<div id="import-the-data-set-and-produce-a-summary-of-it" class="section level2">
+<h2>Import the data set and produce a summary of it</h2>
+<p>Summary of the biostat data set</p>
+<pre class="r"><code>d &lt;- read.csv(&quot;data/biostats.csv&quot;)
+data(d)</code></pre>
+<pre><code>Warning in data(d): data set &#39;d&#39; not found</code></pre>
+<pre class="r"><code>summary(d)</code></pre>
+<pre><code>      Name          Sex          Age         Height..in.   
+ Alex   : 1          F: 7   Min.   :23.00   Min.   :62.00  
+ Bert   : 1          M:11   1st Qu.:30.00   1st Qu.:66.25  
+ Carl   : 1                 Median :32.50   Median :69.50  
+ Dave   : 1                 Mean   :34.67   Mean   :69.06  
+ Elly   : 1                 3rd Qu.:38.75   3rd Qu.:71.75  
+ Fran   : 1                 Max.   :53.00   Max.   :75.00  
+ (Other):12                                                
+  Weight..lbs.  
+ Min.   : 98.0  
+ 1st Qu.:132.0  
+ Median :150.0  
+ Mean   :146.7  
+ 3rd Qu.:165.2  
+ Max.   :176.0  
+                </code></pre>
+<pre class="r"><code>print(paste(&quot;There are&quot;,nrow(d),&quot;rows in biostats data set!&quot;))</code></pre>
+<pre><code>[1] &quot;There are 18 rows in biostats data set!&quot;</code></pre>
+<pre class="r"><code>print(paste(&quot;There are&quot;,ncol(d),&quot;cols in biostats data set!&quot;))</code></pre>
+<pre><code>[1] &quot;There are 5 cols in biostats data set!&quot;</code></pre>
+<pre class="r"><code>print(paste(&quot;The mean of age is&quot;,mean(d$Age)))</code></pre>
+<pre><code>[1] &quot;The mean of age is 34.6666666666667&quot;</code></pre>
+<pre class="r"><code>print(paste(&quot;The median height of this group is&quot;, median(d$Height..in.)))</code></pre>
+<pre><code>[1] &quot;The median height of this group is 69.5&quot;</code></pre>
+</div>
+<div id="statistical-summary-of-the-ageweight-column-and-the-plot-their-relationship" class="section level2">
+<h2>statistical summary of the “age”,“weight” column and the plot their relationship</h2>
+<pre class="r"><code>summary(d$Age)</code></pre>
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  23.00   30.00   32.50   34.67   38.75   53.00 </code></pre>
+<pre class="r"><code>hist(d$Age, main = &quot;histogrm of biostat Age&quot;)</code></pre>
+<p><img src="figure/index.Rmd/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>summary(d$Weight..lbs.)</code></pre>
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   98.0   132.0   150.0   146.7   165.2   176.0 </code></pre>
+<pre class="r"><code>hist(d$Weight..lbs., main = &quot;histogrm of biostat weight&quot;)</code></pre>
+<p><img src="figure/index.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="plot-of-age-and-weight" class="section level2">
+<h2>plot of age and weight</h2>
+<pre class="r"><code>plot(d$Age,d$Weight..lbs.,xlab = &quot;Age&quot;,ylab = &quot;weight&quot;)</code></pre>
+<p><img src="figure/index.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="the-linear-regression-with-height-against-weightage-and-sex" class="section level2">
+<h2>the linear regression with height against weight,age and sex</h2>
+<pre class="r"><code>mod &lt;- lm(d$Height..in.~d$Sex+d$Age+d$Weight..lbs.)
+summary(mod)</code></pre>
+<pre><code>
+Call:
+lm(formula = d$Height..in. ~ d$Sex + d$Age + d$Weight..lbs.)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.9753 -0.9337  0.0885  0.7293  3.9238 
+
+Coefficients:
+               Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)    53.26010    4.58810  11.608 1.43e-08 ***
+d$Sex       M   2.13391    1.70083   1.255   0.2302    
+d$Age           0.06689    0.07170   0.933   0.3667    
+d$Weight..lbs.  0.08296    0.04274   1.941   0.0727 .  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 1.773 on 14 degrees of freedom
+Multiple R-squared:  0.7914,    Adjusted R-squared:  0.7467 
+F-statistic: 17.71 on 3 and 14 DF,  p-value: 4.881e-05</code></pre>
+<p>The median residuals of this linear model is 0.0884579</p>
+<br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>R version 3.5.2 (2018-12-20)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 18362)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252 
+[2] LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] workflowr_1.4.0 Rcpp_1.0.0      digest_0.6.18   rprojroot_1.3-2
+ [5] backports_1.1.3 git2r_0.26.1    magrittr_1.5    evaluate_0.13  
+ [9] stringi_1.3.1   fs_1.3.1        whisker_0.3-2   rmarkdown_1.11 
+[13] tools_3.5.2     stringr_1.4.0   glue_1.3.0      xfun_0.5       
+[17] yaml_2.2.0      compiler_3.5.2  htmltools_0.3.6 knitr_1.21     </code></pre>
+</div>
+</div>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using

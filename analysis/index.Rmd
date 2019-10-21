@@ -10,6 +10,8 @@ editor_options:
 
 Welcome to my first workflowr research website.
 
+## Import the data set and produce a summary of it
+
 Summary of the biostat data set
 ```{r}
 d <- read.csv("data/biostats.csv")
@@ -18,9 +20,11 @@ summary(d)
 
 print(paste("There are",nrow(d),"rows in biostats data set!"))
 print(paste("There are",ncol(d),"cols in biostats data set!"))
+print(paste("The mean of age is",mean(d$Age)))
+print(paste("The median height of this group is", median(d$Height..in.)))
 ```
 
-statistical summary of the "age","weight" column and the plot their relationship
+##statistical summary of the "age","weight" column and the plot their relationship
 ```{r}
 summary(d$Age)
 hist(d$Age, main = "histogrm of biostat Age")
@@ -31,13 +35,24 @@ summary(d$Weight..lbs.)
 hist(d$Weight..lbs., main = "histogrm of biostat weight")
 ```
 
+##plot of age and weight
 ```{r}
 plot(d$Age,d$Weight..lbs.,xlab = "Age",ylab = "weight")
 ```
 
-Now let's run a simple regression with weight against to sex,height,and age
+
+##the linear regression with height against weight,age and sex
 ```{r}
-mod <- lm(d$Weight..lbs.~d$Sex+d$Height..in.+d$Age)
+
+mod <- lm(d$Height..in.~d$Sex+d$Age+d$Weight..lbs.)
 summary(mod)
+
 ```
+
+The median residuals of this linear model is 
+`r median(residuals(mod))`
+
+
+
+
 
